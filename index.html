@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            id="search-form-input"
+            required
+            placeholder="Enter your city here..."
+            class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,<span id="description"> </span><br />
+              Humidity:<strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-icon">
+              <div id="icon"></div>
+            </div>
+
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">℃</div>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date"></div>
+              Thu
+              </div>
+              <img
+                src="http://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42" />
+                <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-temperature-max">
+18°
+                  </span> <span class="weather-forecast-temperature-min">12°</span></div>
+                <div>  </div>
+            
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Coded by <a href="https://github.com/Alisonrajpal">Alison</a> code
+        hosted on <a href="https://github.com/Alisonrajpal/meto">Github</a> and
+        website hosted on
+        <a href="https://github.com/Alisonrajpal/meto">Netify</a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
